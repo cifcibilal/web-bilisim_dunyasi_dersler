@@ -1,0 +1,28 @@
+.container{
+    width: 800px;
+    height: 950px;
+    background-color: antiquewhite;
+padding: 10px;
+}
+.kapsayici{
+    width: 800px;
+    height: 250px;
+    background: lightblue;
+    position: relative;
+}
+
+.kutu{
+    width: 180px;
+    height: 150px;
+    margin: 10px;
+    background-color: lightcoral;
+    float: left;
+}
+.abs-kutu{
+    width: 150px;
+    height: 50px;
+    background-color: lightgreen;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+}
