@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Kontrolleri</title>
+</head>
+
+<body>
+    <form name="form1" method="get" id="form1">
+        Kullanici Ad: <input type="text" name="kadi" id="kadi" required autofocus>
+        <br>
+        Sifreniz: <input type="password" name="sifre" id="sifre" required>
+        <br>
+        Telefon: <input type="tel" name="tel" id="tel"required pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="1234567890">
+        <br>
+        E-Posta: <input type="email" name="eposta" id="eposta" required placeholder="asd@asd.com">
+        <br>
+        Web Siteniz: <input type="url" name="webadres" id="webadres" required placeholder="http://asd.com">
+        <br><br>
+        <input type="submit" name="submit" id="submit" value="Gonder" >
+    </form>
+</body>
+
+</html>
