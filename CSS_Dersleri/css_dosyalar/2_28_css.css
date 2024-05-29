@@ -1,0 +1,32 @@
+div#kapsayici{
+    width: 900px;
+    background-color: gray;
+    margin: auto;
+    height: 10000px;
+    position: relative;
+}
+div.kutu {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+div#kutu1{
+    background-color: lightblue;
+    z-index: 2;
+    position: fixed;
+}
+div#kutu2{
+    background-color: lightcoral;
+    right: 30px;
+    top: 10px;
+    z-index: 1;
+}
+div#kutu3{
+    background-color: lightcyan;
+    float: left;
+    top: 10px;
+    margin: 100px 0px;
+    position: sticky;
+}
