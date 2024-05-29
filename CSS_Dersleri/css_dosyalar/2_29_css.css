@@ -1,0 +1,7 @@
+div#container {
+    width: 650px;
+    height: 500px;
+    margin: 0 auto;
+    background: radial-gradient(circle at center,white,black,gray);
+
+}
