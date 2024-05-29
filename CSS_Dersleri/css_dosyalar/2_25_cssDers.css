@@ -1,0 +1,25 @@
+div#kapsayici {
+    width: 900px;
+    background: lightgray;
+    margin: auto;
+}
+
+div#banner {
+    width: 880px;
+    background: lightsalmon;
+    height: 150px;
+    margin: 10px;
+}
+
+div.kutu {
+    width: 100px;
+    height: 100px;
+    background: lightskyblue;
+    margin: 10px;
+    float: left;
+}
+
+.temizle {
+    clear: both;
+}
+.sol-temizle{clear: left;}
