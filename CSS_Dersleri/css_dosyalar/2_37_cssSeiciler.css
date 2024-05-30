@@ -1,0 +1,337 @@
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700');
+
+body {
+    background: #f5f5f5;
+    font-family: 'Crimson Text', serif;
+    color: #18314F;
+}
+
+.baslik {
+    font-size: 26px;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 4px;
+    color: #18314F;
+    font-weight: 400;
+
+}
+
+section {
+    width: 800px;
+    height: 500px;
+    background: #FFFFFF;
+    border: 1px solid black;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .25);
+    padding: 10px;
+
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 3em;
+    letter-spacing: 8px;
+    text-align: center;
+    color: #8BBEB2;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid rgba(24, 49, 79, .3);
+    width: 20%;
+    margin: 20px auto 0;
+}
+
+p {
+    color: #18314F;
+    font-size: 18px;
+    letter-spacing: 3px;
+    margin: 5px;
+}
+
+.kutular {
+    width: 80px;
+    padding: 30px 0;
+    border: 1px solid rgba(0, 0, 0, 1.00);
+    float: left;
+    margin: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/*********************** 1- Evrensel Seçici( * )**************************/
+
+* {}
+
+
+
+
+
+
+
+
+/******************* 2- Class Seçici(Sınıf Seçici .etiket)*******************/
+
+.sinif {
+    background: red;
+    font-size: 20px;
+}
+
+.kirmizi {
+    color: white;
+}
+.italik{
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+/************************ 3- Id Seçici (Kimlik Seçici #etiket)****************/
+
+
+#paragraf{
+    font-size: 25px;
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/********************** 4- Etiket Seçici (a, div, p)****************************/
+
+
+hr {
+    width: 700px;
+    height: 3px;
+    background-color: rebeccapurple;
+}
+a{
+    color: black;
+}
+
+
+
+/********************** 5- Çoklu Seçiciler(X,Y,Z) *****************************/
+
+p,a{
+    color: gray;
+}
+
+
+
+
+.baslik, .icerik{color: blueviolet;}
+
+
+
+/********************* 6- İç Nesne Seçiciler (Torun Seçiciler X Y)*****************************/
+
+
+.torun a{
+    color: brown;
+}
+
+.torun p{
+    color: chocolate;
+    font-weight: bold;
+}
+
+
+
+
+/********************* 7- Yanyana Seçiciler(X+Y)*****************************/
+
+.yanyana h3+p {
+    color: red;
+}
+
+
+.yanyana h3+p{
+color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+/********************* 8- Çocuk Seçiciler(X>Y) *****************************/
+
+.cocuk>p {
+    color: red
+}
+
+.cocuk > p{
+    font-size: 20px;
+    display: block;
+    color: black;
+    border: 1px solid red;
+}
+
+
+
+
+
+
+
+
+/********************* 9- Bitişik Seçiciler(X~Y) *****************************/
+
+.bitisik ul~p {
+    color: white;
+    background-color: blueviolet;
+}
+
+.bitisik ul~p{
+    color: aqua;
+    background-color: bisque;
+}
+
+
+
+
+
+
+
+/********************* 10- Nitelik Seçici(X[Y]) *****************************/
+input[type=text] {
+    background: red;
+}
+
+input[type=button] {
+    background: red;
+}
+
+input[type=radio] {
+    transform: scale(2);
+}
+
+/* baslangic ifadesi ^= */
+.nitelik a[href^='https']{
+    text-decoration: none;
+}
+/* bitis ifadesi $= */
+.nitelik a[href$='yandex.com']{
+    color: red;
+}
+
+
+
+
+
+
+
+/*********-11- Nitelik Seçici(X[Nitelik='Değer'] *, $, ^, ~ ) *************/
+
+
+.nitelikicerik a[href^="mailto"]::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    background: url(../../resimler/safe.png);
+    display: block;
+    background-size: cover;
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+/*********************12- X::first-letter ve X::first-line *****************/
+
+
+
+.ilk p::first-letter {
+    font-size: 40px;
+}
+
+.ilk p::first-line {
+    color: red;
+}
+
+
+
+
+
+
+
+
+/**************************13- X::before ve X::after **************************/
+
+
+
+#sonra {
+    position: relative;
+    max-width: 300px;
+    -moz-box-shadow: 1px 2px 4px gray;
+    -webkit-box-shadow: 1px 2px 4px gray;
+    box-shadow: 1px 2px 4px gray;
+    padding: 10px;
+    background: white;
+
+}
+
+#sonra::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 15px 20px gray;
+    -moz-box-shadow: 0 15px 20px gray;
+    box-shadow: 0 15px 20px gray;
+    width: 70%;
+    left: 15%;
+    height: 100px;
+    bottom: 0;
+}
+.oncesonra p::after{
+    content: '';
+    border-bottom: 1px solid gray;
+    width: 50%;
+    display: block;
+
+}
+
+
+
+
+
+
+/*************************14- Nth(n'inci)-child  ***********************/
+
+.kutu .kutular:nth-child(3n+5) {
+    background: #FB8B8D;
+}
