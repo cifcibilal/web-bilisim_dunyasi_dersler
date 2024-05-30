@@ -1,0 +1,13 @@
+.kutu{
+    width: 150px;
+    height: 150px;
+    background-color: lightblue;
+    margin: 5px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+td{
+    vertical-align: bottom;
+    background-color: aquamarine;
+}
