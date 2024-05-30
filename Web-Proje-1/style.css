@@ -90,5 +90,55 @@ header #banner{
     text-transform: uppercase;
     font-size: 20px;
     border-radius: 5px;
-    
+
+}
+
+#bolum-2{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.kapsayici{
+    width: 1000px;
+    padding: 0 auto;
+}
+
+#bolum-2 .kapsayici .sol{
+    width: 400px;
+    float: left;
+    left: 70px;
+}
+
+#bolum-2 h2{
+    font-family: "Raleway", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+#bolum-2 .kapsayici .sol p{
+    text-transform: uppercase;
+}
+
+#bolum-2 .sol p{
+    font-family: "Raleway", sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #aaa;
+    line-height: 40px;
+}
+
+#bolum-2 .sag{
+    width: 400px;
+    float: right;
+    padding-right: 50px;
+    margin-left: 40px;
+}
+
+#bolum-2 .sag p{
+    line-height: 30px;
+    color: #666;
+    margin-bottom: 20px;
 }
