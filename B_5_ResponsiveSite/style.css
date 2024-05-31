@@ -60,3 +60,27 @@ aside{
 .aciklama:nth-last-child(1){
     margin-bottom: 0;
 }
+
+section.bolum2{
+    display: flex;
+    height: 200px;
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+article{
+    flex-basis: 750px;
+    height: 200px;
+    background: #2e3192;
+    flex-grow: 1;
+    flex-shrink: 2;
+}
+
+.yan-menu{
+    flex-basis: 250px;
+    background: #fff200;
+    margin-left: 5px;
+    flex-shrink: 1;
+    flex-grow: 1;
+    align-self: stretch;
+}
