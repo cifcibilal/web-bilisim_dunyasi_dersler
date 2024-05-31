@@ -4,8 +4,8 @@
     font-family: 'pt_sansregular';
 }
 
-header.ust{
-    background: url(images/overlay.png),url(images/banner.jpg);
+header.ust {
+    background: url(images/overlay.png), url(images/banner.jpg);
     position: relative;
     background-size: cover;
     width: 100%;
@@ -14,7 +14,7 @@ header.ust{
     padding: 0;
 }
 
-header h1{
+header h1 {
     position: relative;
     font-size: 18px;
     margin-left: 30px;
@@ -25,16 +25,17 @@ header h1{
     font-family: "Raleway", sans-serif;
 }
 
-header strong{
+header strong {
     font-weight: 700;
 }
-header a{
+
+header a {
     text-decoration: none;
     color: white;
     font-weight: 900;
 }
 
-header ul{
+header ul {
     list-style: none;
     position: relative;
     float: right;
@@ -42,13 +43,13 @@ header ul{
     top: 0;
 }
 
-header ul li{
+header ul li {
     display: block;
     padding: 30px;
     float: left;
 }
 
-header ul li a{
+header ul li a {
     font-size: 18px;
     font-family: 'pt_sansregular';
     font-weight: 100;
@@ -56,25 +57,27 @@ header ul li a{
     color: #d8d8d8;
     transition: .2s;
 }
-header ul li a:hover{
+
+header ul li a:hover {
     color: white;
 }
 
-header #banner{
+header #banner {
     width: 100%;
     position: absolute;
     top: 40%;
     text-align: center;
 }
 
-#banner h2{
+#banner h2 {
     font-size: 40px;
     color: aliceblue;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-#banner p{
+
+#banner p {
     color: #aaa;
     font-size: 22px;
     margin-bottom: 40px;
@@ -84,7 +87,7 @@ header #banner{
     letter-spacing: 2px;
 }
 
-#banner a{
+#banner a {
     padding: 25px 35px;
     background: #f32853;
     text-transform: uppercase;
@@ -93,35 +96,36 @@ header #banner{
 
 }
 
-#bolum-2{
+#bolum-2 {
     width: 1000px;
     margin: 0 auto;
     padding: 50px 0;
 }
 
-.kapsayici{
+.kapsayici {
     width: 1000px;
     padding: 0 auto;
 }
 
-#bolum-2 .kapsayici .sol{
+#bolum-2 .kapsayici .sol {
     width: 400px;
     float: left;
     left: 70px;
 }
 
-#bolum-2 h2{
+#bolum-2 h2 {
     font-family: "Raleway", sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 60px;
     text-transform: uppercase;
 }
-#bolum-2 .kapsayici .sol p{
+
+#bolum-2 .kapsayici .sol p {
     text-transform: uppercase;
 }
 
-#bolum-2 .sol p{
+#bolum-2 .sol p {
     font-family: "Raleway", sans-serif;
     margin-top: 20px;
     font-size: 20px;
@@ -130,15 +134,87 @@ header #banner{
     line-height: 40px;
 }
 
-#bolum-2 .sag{
+#bolum-2 .sag {
     width: 400px;
     float: right;
     padding-right: 50px;
     margin-left: 40px;
 }
 
-#bolum-2 .sag p{
+#bolum-2 .sag p {
     line-height: 30px;
     color: #666;
     margin-bottom: 20px;
+}
+
+.temizle {
+    clear: both;
+}
+
+#bolum3 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+    background: #f6f6f6;
+    text-align: center;
+}
+
+#bolum3 h2 {
+    font-size: 40px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: #484848;
+}
+
+#bolum3 p {
+    margin: 40px 0;
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #111;
+}
+
+#bolum3 .resim {
+    width: 500px;
+    float: left;
+    background: #fff;
+    margin: 50px 20px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px #ccc;
+
+}
+
+#bolum3 img {
+    width: 500px;
+    margin: 0;
+}
+
+#bolum3 .kapsayici2 {
+    width: 1100px;
+    margin: 0 auto;
+
+}
+
+#bolum3 ul{
+    list-style: none;
+
+}
+
+#bolum3 ul li{
+    display: inline-block;
+}
+#bolum3 ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding: 20px 50px;
+    background: #f32853;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#bolum3 ul li:nth-child(2) a{
+    background: #323037;
 }
