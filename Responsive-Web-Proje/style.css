@@ -247,17 +247,18 @@ section.bolum2 {
 
 }
 
-.bolum2 article p{
+.bolum2 article p {
     font-size: 1em;
     line-height: 1.6em;
     color: #444;
 
 }
-.bolum2 ul li a{
+
+.bolum2 ul li a {
     background: #3cadd4;
     border-radius: 30px;
     border: 0;
-    cursor:pointer ;
+    cursor: pointer;
     display: inline-block;
     font-weight: 400;
     padding: 1em 2em;
@@ -265,9 +266,82 @@ section.bolum2 {
     margin: 30px;
     text-decoration: none;
     color: #fff;
-    
+
 }
-.bolum2 ul li a:hover{
+
+.bolum2 ul li a:hover {
     background-color: #61c1e1;
     transition: background-color 0.3s ease-in-out;
+}
+
+.bolum3 {
+    width: 100%;
+    display: block;
+    background-color: #3cadd4;
+    padding: 70px 0 10px;
+    text-align: center;
+}
+
+.bolum3 h2 {
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.bolum3 h2+p {
+    font-size: 1.4em;
+    color: #fff;
+    letter-spacing: 2px;
+
+}
+
+.bolum3 .container .form {
+    width: 600px;
+    margin: 70px auto;
+
+}
+
+.bolum3 .container .form input[type=text] {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 10px;
+    color: #444;
+    font-size: 1em;
+}
+
+.bolum3 .container .form input[type=email] {
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding: 3px 10px;
+    color: #444;
+    font-size: 1em;
+}
+
+.bolum3 .container .form textarea {
+    width: 430px;
+    height: 150px;
+    border-radius: 5px;
+    padding: 3px 10px;
+    color: #444;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.bolum3 .container .form input[type=submit] {
+    margin-top: 70px;
+    font-size: 1.1em;
+    padding: 15px 50px;
+    background: #383b43;
+    color: #FFFFFF;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.bolum3 .container .form input[type=submit]:hover {
+   background: #4c4c4c;
+   transition: background-color 0.2s ease-in-out;
 }
