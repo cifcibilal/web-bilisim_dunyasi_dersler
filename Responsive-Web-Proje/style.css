@@ -1,20 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 /*font-family: "Raleway", sans-serif;*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-body{
+
+body {
     font-size: 16px;
     font-family: "Raleway", sans-serif;
 }
 
-.wrapper{
+.wrapper {
     width: 100%;
 }
-.banner{
+
+.banner {
     width: 100%;
     height: 100vh;
     background-position: center center;
@@ -27,14 +29,15 @@ body{
     align-items: center;
     justify-content: center;
 }
-header{
+
+header {
     margin: 0 auto;
     position: absolute;
     width: 100%;
     align-self: flex-start;
 }
 
-header h1{
+header h1 {
     position: absolute;
     font-size: 1.5em;
     margin-left: 30px;
@@ -45,7 +48,7 @@ header h1{
     float: left;
 }
 
-header nav.menu ul{
+header nav.menu ul {
     position: absolute;
     float: right;
     right: 20px;
@@ -53,36 +56,38 @@ header nav.menu ul{
 
 }
 
-header nav.menu ul li{
+header nav.menu ul li {
     display: block;
     padding: 30px;
     float: left;
 }
 
-header nav.menu ul li a{
+header nav.menu ul li a {
     font-size: 18px;
     text-decoration: none;
     color: #D8d8d8;
     font-weight: 100;
 }
-header nav.menu ul li a:hover{
+
+header nav.menu ul li a:hover {
     color: white;
     transition: color 0.2s ease-in-out;
 }
 
-h2.altbaslik{
+h2.altbaslik {
     color: white;
     font-size: 2em;
     margin-bottom: 20px;
 }
-.banner .yazi p{
+
+.banner .yazi p {
     font-size: 1.5em;
     color: white;
     line-height: 1.5em;
     margin-bottom: 50px;
 }
 
-.buton a{
+.buton a {
     text-decoration: none;
     font-size: 1em;
     color: white;
@@ -91,12 +96,13 @@ h2.altbaslik{
     border-radius: 20px;
 
 }
-.buton a:hover{
+
+.buton a:hover {
     background: #61c1e1;
     transition: background-color 0.2s ease-in-out;
 }
 
-section.bolum1{
+section.bolum1 {
     width: 100%;
     background: #f5f5f5;
     padding: 100px 0;
@@ -105,21 +111,22 @@ section.bolum1{
 
 }
 
-.bolum1 h2{
-    color:#474747 ;
+.bolum1 h2 {
+    color: #474747;
     font-size: 3em;
     font-weight: 900;
     line-height: 1em;
     margin-bottom: 0.5em;
 }
-.bolum1 h2 + p{
-    color:#858585;
+
+.bolum1 h2+p {
+    color: #858585;
     font-size: 1.3em;
     margin-bottom: 0.5em;
 
 }
 
-.container{
+.container {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
@@ -127,7 +134,7 @@ section.bolum1{
     flex-wrap: wrap;
 }
 
-.bolum1 .kutu{
+.bolum1 .kutu {
     flex-basis: 300px;
     flex-shrink: 0;
     flex-grow: 1;
@@ -138,37 +145,129 @@ section.bolum1{
     align-self: stretch;
 }
 
-.bolum1 .kutu:nth-last-child(1){
+.bolum1 .kutu:nth-last-child(1) {
     margin-right: 0;
 }
 
-.bolum1 .kutu i{
+.bolum1 .kutu i {
     font-size: 2em;
     border-radius: 50%;
     padding: 40px;
     color: #fff;
 }
-.bolum1 .kutu i.cloud{
+
+.bolum1 .kutu i.cloud {
     background: #3cadd4;
 }
-.bolum1 .kutu i.desktop{
+
+.bolum1 .kutu i.desktop {
     background: lime;
 }
-.bolum1 .kutu i.rocket{
-    background:red;
+
+.bolum1 .kutu i.rocket {
+    background: red;
 }
 
-.bolum1 .kutu h3{
+.bolum1 .kutu h3 {
     margin: 20px 0;
     color: #858585;
     font-size: 1.3em;
     font-weight: 700;
 }
 
-.bolum1 .kutu p{
+.bolum1 .kutu p {
     color: #858585;
     font-size: 1em;
     font-weight: 100;
     padding: 0 30px 20px 30px;
     line-height: 1.em;
+}
+
+section.bolum2 {
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #d1d1d1;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 80px;
+    display: block;
+}
+
+.bolum2 h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #474747;
+    font-weight: 900;
+}
+
+.bolum2 h2+p {
+    font-size: 1.3em;
+    margin-bottom: 80px;
+    color: #858585;
+}
+
+.bolum2 .kisiler {
+    width: 100%;
+    border-top: 1px solid #d1d1d1;
+    border-bottom: 1px solid #d1d1d1;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bolum2 .kisi {
+    flex-basis: 220px;
+    margin: 50px 10px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.bolum2 .kisi img {
+    float: left;
+    width: 100px;
+    border-radius: 50%;
+    margin: 5px 10px;
+
+}
+
+.bolum2 .kisi h4 {
+    margin-top: 20px;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+.bolum2 .kisi p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.bolum2 article {
+    margin: 50px auto;
+    width: 70%;
+
+}
+
+.bolum2 article p{
+    font-size: 1em;
+    line-height: 1.6em;
+    color: #444;
+
+}
+.bolum2 ul li a{
+    background: #3cadd4;
+    border-radius: 30px;
+    border: 0;
+    cursor:pointer ;
+    display: inline-block;
+    font-weight: 400;
+    padding: 1em 2em;
+    text-align: center;
+    margin: 30px;
+    text-decoration: none;
+    color: #fff;
+    
+}
+.bolum2 ul li a:hover{
+    background-color: #61c1e1;
+    transition: background-color 0.3s ease-in-out;
 }
