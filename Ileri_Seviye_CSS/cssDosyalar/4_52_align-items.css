@@ -1,0 +1,14 @@
+.container{
+    display: flex;
+    height: 400px;
+    align-items:flex-end ;
+    background-color: #4644FF;
+}
+.kutu{
+    background-color: #F1F1F1;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    margin: 10px;
+    font-size: 30px;
+}
