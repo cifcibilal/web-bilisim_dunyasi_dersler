@@ -341,7 +341,95 @@ section.bolum2 {
     border: none;
     cursor: pointer;
 }
+
 .bolum3 .container .form input[type=submit]:hover {
-   background: #4c4c4c;
-   transition: background-color 0.2s ease-in-out;
+    background: #4c4c4c;
+    transition: background-color 0.2s ease-in-out;
+}
+
+footer {
+    width: 100%;
+    background: #383b43;
+    padding: 30px 0;
+}
+
+footer .container {
+    margin-top: 50px;
+    border-bottom: 1px solid #979797;
+}
+
+footer .footerkutu {
+    margin-left: 20px;
+    width: 200px;
+
+}
+
+footer h3 {
+    color: #fff;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+footer .container ul {
+    display: block;
+    width: 100%;
+    float: left;
+    margin-bottom: 30px;
+
+}
+
+footer .container ul a {
+    color: #cdced0;
+    text-decoration: none;
+    font-size: 0.9em;
+    line-height: 2.5em;
+}
+
+footer .container ul a:hover {
+    text-decoration: underline;
+}
+.sosyal {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+footer .lisans{
+    width: 100%;
+    margin: 20px auto;
+}
+
+footer .lisans p{
+    color:#585858;
+    float: left;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+footer .icons {
+    float: right;
+
+}
+
+footer .icons i{
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #fff;
+}
+
+.temizle{
+    clear: both;
+}
+footer .icons i.facebook1{
+    background: #39599f;
+}
+footer .icons i.twitter1{
+    background: #2daae4;
+}
+footer .icons i.linkedin1{
+    background: #31516a;
 }
