@@ -104,7 +104,7 @@ header #banner {
 
 .kapsayici {
     width: 1000px;
-    padding: 0 auto;
+    margin: 0 auto;
 }
 
 #bolum-2 .kapsayici .sol {
@@ -195,15 +195,16 @@ header #banner {
 
 }
 
-#bolum3 ul{
+#bolum3 ul {
     list-style: none;
 
 }
 
-#bolum3 ul li{
+#bolum3 ul li {
     display: inline-block;
 }
-#bolum3 ul li a{
+
+#bolum3 ul li a {
     text-decoration: none;
     font-size: 20px;
     display: block;
@@ -215,6 +216,81 @@ header #banner {
     letter-spacing: 2px;
 }
 
-#bolum3 ul li:nth-child(2) a{
+#bolum3 ul li:nth-child(2) a {
     background: #323037;
+}
+
+#bolum4 {
+    width: 100%;
+    padding-top: 50px;
+
+}
+
+#bolum4 h2 {
+    margin-left: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    color: #484848;
+    margin-bottom: 30px;
+}
+
+#bolum4 h2+p {
+    font-size: 18px;
+    color: #666;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+#bolum4 .bolumler {
+    width: 460px;
+    float: left;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+#bolum4 .bolumler .kucukresim {
+    float: right;
+    width: 130px;
+    margin: 10px;
+}
+
+#bolum4 .kucukresim img {
+    border: 5px solid #b0b0b0;
+    border-radius: 100%;
+    width: 130px;
+}
+
+#bolum4 .bolumler .yazi {
+    float: left;
+    width: 290px;
+    text-align: right;
+    padding: 10px;
+    line-height: 25px;
+}
+
+#bolum4 .bolumler h3 {
+    text-align: right;
+    font-size: 18px;
+    color: #484848;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#bolum4 .bolumler .yazi h3+p {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 20px;
+}
+
+#bolum4 .bolumler:nth-child(2n) .yazi,
+#bolum4 .bolumler:nth-child(2n) .yazi h3 {
+    text-align: left;
+}
+#bolum4 .bolumler:nth-child(2n) .kucukresim{
+    float: left;
+}
+#bolum3 .bolumler .yazi p:nth-child(3){
+    color: #666;
+    font-size: 18px;
 }
