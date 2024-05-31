@@ -1,0 +1,29 @@
+.container {
+    width: 100%;
+    border: 1px solid #c3c3c3;
+    display: flex;
+    
+}
+
+.kutu {
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+    padding: 70px 0;
+    flex-grow: 1;
+}
+
+.kutu1 {
+    background-color: chocolate;
+    flex-shrink: 1;
+}
+
+.kutu2 {
+    background-color: blueviolet;
+flex-shrink: 3;
+}
+
+.kutu3 {
+    background-color: lime;
+    flex-shrink: 0;
+}
