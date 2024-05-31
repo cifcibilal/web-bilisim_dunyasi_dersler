@@ -95,3 +95,80 @@ h2.altbaslik{
     background: #61c1e1;
     transition: background-color 0.2s ease-in-out;
 }
+
+section.bolum1{
+    width: 100%;
+    background: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 0.5em;
+
+}
+
+.bolum1 h2{
+    color:#474747 ;
+    font-size: 3em;
+    font-weight: 900;
+    line-height: 1em;
+    margin-bottom: 0.5em;
+}
+.bolum1 h2 + p{
+    color:#858585;
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+
+}
+
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bolum1 .kutu{
+    flex-basis: 300px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    background: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-right: 20px;
+    align-self: stretch;
+}
+
+.bolum1 .kutu:nth-last-child(1){
+    margin-right: 0;
+}
+
+.bolum1 .kutu i{
+    font-size: 2em;
+    border-radius: 50%;
+    padding: 40px;
+    color: #fff;
+}
+.bolum1 .kutu i.cloud{
+    background: #3cadd4;
+}
+.bolum1 .kutu i.desktop{
+    background: lime;
+}
+.bolum1 .kutu i.rocket{
+    background:red;
+}
+
+.bolum1 .kutu h3{
+    margin: 20px 0;
+    color: #858585;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.bolum1 .kutu p{
+    color: #858585;
+    font-size: 1em;
+    font-weight: 100;
+    padding: 0 30px 20px 30px;
+    line-height: 1.em;
+}
