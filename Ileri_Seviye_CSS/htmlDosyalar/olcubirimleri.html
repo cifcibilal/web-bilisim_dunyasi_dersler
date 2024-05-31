@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+	<link rel="stylesheet" href="../cssDosyalar/olcu.css">
+</head>
+
+<body>
+	<div class="kutu">
+		<h3>1- CSS Ölçü Birimi</h3>
+		<p>Web tasarım yaparken en sık sorulardan biri de hangi ölçü birimini kullanmalıyız olmaktadır. Css ile tasarım yaparken kulandığımız bir çok ölçü birimi bulunmaktadır. Bunlardan bazıları günlük hayattan, bazıları baskı dünyasından, bazıları da bilişim teknolojilerinden gelmektedir. Bizler önceki derslerimizde px ve % ölçü birimini kullanmıştık.</p>
+		
+	</div>
+	<div class="kutu">
+		<h3>2- Göreceli Ölçü Birimleri(px, em,rem,%, vh, vw)</h3>
+		<p>		Bu ölçü birimleri kesin değildir. Bir CSS özelliğinin başka bir CSS özelliğine göre ölçümlendirilmesidir. Bu ölçü birimleri ekran çözünürlüğüne veya tarayıcının standart font büyüklüğüne göre yeniden ölçülendirilirler. Özellikle responsive tasarım yapıyorsanız bu ölçü birimlerini sıklıkla kullanacaksınız. Çünkü ekran boyutu ve çözünürlüğü responsive tasarımın temelini oluşturmaktadır.</p>
+
+	</div>
+	<div class="kutu">
+		<h3>3- Mutlak Ölçü Birimleri</h3>
+		<p>Her ortamda aynı boyutu vermektedirler. Baz aldıkları başka bir css özelliği yoktur. Genellikle baskı dünyasında kullanılmaktadır. Bizler görüntüyü ekranlarda oluşturacağımız için bu ölçü birimlerini kullanmayacağız.</p>
+		
+	</div>
+	<div class="kutu">
+		<h3>4- px Ölçü Birimi</h3>
+		<p>		En sık kullandığımız css ölçü birimidir. px ölçü birimi ekran çözünürlüğüne göre kendini ölçülendirir. Bir monitörün çözünürlüğü arttıkça görsel veya yazılar px cinsinden olduğu zaman ekranda küçülecektir(inc başına düşen pixel sayısı artacaktır). Ekran çözünürlüğü düştükçe de görsel ve yazılar büyüyecektir. </p>
+
+	</div>
+	<div class="kutu">
+		<h3>5- em Ölçü Birimi</h3>
+		<p>	Sitemizin body tagına tanımlamış olduğumuz font boyutundan referans alarak boyutlandırma yapar. body tagına herhangi bir font-size tanımlamadığımız takdirde varsayılan olarak 16px üzerinden ölçülendirme yapar yani satandart olarak 16px = 1em. Responsive tasarımlarda yazı boyutu olarak sıkça kullanılmaktadır. Body'nin font-size değerini değiştirdiğimiz zaman bütün belgedeki yazı boyutları tek seferde değişecektir. </p>
+	
+	</div>
+	<div class="kutu">
+		<h3>6- rem Ölçü Birimi</h3>
+		<p> em biriminin root halidir. Yani html tagına tanımlanmış font-size den referans alarak boyutlandırma yapmaktadır.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, neque, maiores sunt autem impedit dolor sed praesentium modi. Aperiam, animi quae. Et dolores nesciunt illum quidem odio repudiandae. Consequatur, ea.
+</p>
+		
+	</div>
+	
+	<div class="kutu">
+		<h3>7- % Ölçü Birimi</h3>
+		<p>		 Css te sık kullanılan ölçü birimlerinden bir tanesi de % dir. Divlerin yüksekllik ve genişliğini belirtirken pencere boyutunu referans alırken yazıları boyutlandırırken body etiketine tanımlanmış font-size dan referans almaktadır. Özellikle kutu modelinde ve sresponsive tasarımda sıkça kullanılmaktadır. Bir divin genişliğini ayarlarken sıkça kullanılır</p>
+
+	</div>
+	<div class="kutu">
+		<h3>8- pt Ölçü Birimi</h3>
+		<p> Mutlak ölçü birimlerinden punto yada point olarak geçmektedir. Kelime işlem programlarından(word vb.) aşina olduğumuz bir ölçü birimidir. Genellikle baskı dünyasında kullanılmaktadır. Ya da en basitinden yazıcıdan çıktı almak için kullanılır.</p>
+		
+	</div>
+	<div class="kutu">
+		<h3>9- mm Ölçü Birimi</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, eos eum vel quibusdam, suscipit earum dolore. Laboriosam amet, dignissimos debitis similique tempora sequi quam aspernatur sint quos modi dicta ipsum.</p>
+		
+		 
+	</div>
+	<div class="kutu">
+		<h3>10- cm Ölçü Birimi</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, eos eum vel quibusdam, suscipit earum dolore. Laboriosam amet, dignissimos debitis similique tempora sequi quam aspernatur sint quos modi dicta ipsum.</p>
+		
+		 
+	</div>
+		<div class="kutu">
+		<h3>11- vw ve vh Ölçü Birimi</h3>
+			<p>CSS3 ile hayatımıza giren yeni ölçü birimleridir. Penceremizin görüntülenebilir yükseklik ve genişliğini ifade eder.</p><br>
+
+	
+
+		<b>Viewport Width(vw)</b>
+			<p>vw birimi, yataydaki ekren boyutunun 1/100'üne denk gelen ölçü birimi. dvi{ width:2vw;}<br>
+ekran çözünürlüğünün 1280x720 olduğunu düşünürsek ;<br>
+2x1280/100 = 25,6px boyutunda katman elde ediyoruz.</p><br>
+
+
+<b>Viewport Height(vh)</b>
+<p>vh ekran yüksekliğinin 1/100'lük bir bölümüne denk geliyor <br>
+<xmp>div{max-height : 50vh;}</xmp><br>
+Bu örneğimiz ise katman boyutu maximum yarım ekran yüksekliğinde olacak</p>
+
+
+		 
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
