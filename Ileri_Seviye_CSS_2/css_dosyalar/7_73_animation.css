@@ -1,0 +1,61 @@
+.kutu,.kutu2 {
+    position: absolute;
+    padding: 2px;
+    width: 300px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #424242;
+}
+.kutu2{
+    top: 50px;
+}
+.ic {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #E1ED62;
+    border-radius: 15px;
+    animation-name: ilerle;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction:normal;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+.ic2 {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background-color: #E1ED62;
+    border-radius: 15px;
+    animation-name: ilerle2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ilerle {
+    from {
+        width: 60px;
+    }
+
+    to {
+        width: 300px;
+    }
+}
+
+@keyframes ilerle2{
+    0%{
+width: 30px;
+    }
+    50%{
+width: 300px;
+    }
+    100%{
+width: 30px;
+    }
+}
+
+.ic:hover{
+    animation-play-state:paused;
+}
