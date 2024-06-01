@@ -1,0 +1,11 @@
+img{
+    width: 150px;
+    margin: 100px auto;
+    display: block;
+    transition: all 1s linear;
+}
+
+img:hover{
+    transform: rotate(-45deg);
+    transform-origin: 100% 0;
+}
