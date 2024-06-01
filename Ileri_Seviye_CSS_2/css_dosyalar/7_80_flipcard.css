@@ -1,0 +1,44 @@
+.kapsayici {
+    width: 240px;
+    height: 200px;
+    margin: 10px;
+    float: left;
+    backface-visibility: hidden;
+}
+
+.on {
+    position: absolute;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    transform: perspective(500px) rotateY(0deg);
+    backface-visibility: hidden;
+    background-color: brown;
+    transition: transform 1s linear;
+    text-align: center;
+}
+
+.arka {
+    position: absolute;
+    width: 240px;
+    height: 200px;
+    border-radius: 7px;
+    transform: perspective(500px) rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: brown;
+    transition: transform 1s linear;
+    text-align: center;
+}
+
+.kapsayici:hover .on {
+    transform: perspective(500px) rotateY(-180deg);
+}
+
+.kapsayici:hover .arka {
+    transform: perspective(500px) rotateY(0deg);
+    
+}
+
+h2{
+    color: aliceblue;
+}
