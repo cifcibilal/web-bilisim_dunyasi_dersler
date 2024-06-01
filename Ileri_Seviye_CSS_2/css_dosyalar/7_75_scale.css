@@ -1,0 +1,19 @@
+.kutu{
+    width: 400px;
+    height: 200px;
+    background-color: aqua;
+    margin: 100px auto;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+img{
+    width: 400px;
+    height: 200px;
+    
+}
+
+img:hover{
+    transform: scaley(1.5);
+    transition: all 1s ease-in-out;
+}
