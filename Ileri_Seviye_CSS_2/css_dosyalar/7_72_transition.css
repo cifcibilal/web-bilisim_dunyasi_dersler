@@ -1,0 +1,97 @@
+/*
+transition-duration -> gecis suresi
+transition-property -> css secicisi ozelligi
+transition-delay -> gecikme suresi
+transition-timing-function -> gecis  efekt turu
+*/
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: calc(100vw - 70px);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #323232;
+    margin: 15px auto;
+    padding: 20px ;
+    flex-direction: column;
+}
+.buton{
+    display: inline-block;
+    padding: 30px 50px;
+    background-color: #33ecf5;
+    color: aliceblue;
+    transition-duration: .8s;
+    transition-delay: 0.5s;
+
+}
+.buton:hover{
+    background-color: #455ff9;
+}
+.resim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border: 1px solid black;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+.resim img{
+    margin: 5px auto;
+    width: 256px;
+    height: auto;
+    opacity: 0.3;
+    transition-duration: .7s;
+    transition-property: width;
+}
+.resim img:hover{
+    width: 300px;
+    opacity: 1;
+}
+.zamalanafonks{
+    border: 1px solid black;
+    margin: 15px auto;
+    width: 80%;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: lightpink;
+}
+.kutu1,.kutu2,.kutu3,.kutu4,.kutu5{
+    width: 100px;
+    height: 40px;
+    background-color: #ff7600d1;
+    margin-bottom: 20px;
+}
+.kutu1{
+    transition:width 2s ease;
+}
+.kutu2{
+    transition: width 2s ease-in;
+}
+.kutu3{
+    transition: width 2s ease-out;
+}
+.kutu4{
+    transition: width 2s ease-in-out;
+}
+.kutu5{
+    transition: width 2s linear;
+}
+.zamalanafonks:hover .kutu1,
+.zamalanafonks:hover .kutu2,
+.zamalanafonks:hover .kutu3,
+.zamalanafonks:hover .kutu4,
+.zamalanafonks:hover .kutu5 {
+    width: 100%;
+}
