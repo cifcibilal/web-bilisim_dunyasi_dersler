@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="">
+        Hobileriniz: <br>
+        <input type="checkbox" name="hobi">Kitap Okumak <br>
+        <input type="checkbox" name="hobi">Spor yapmak <br>
+        <input type="button" value="Tumunu Sec" onclick="tumunuSec()">
+    </form>
+
+    <script>
+        function tumunuSec() {
+            for (let index = 0; index < document.getElementsByName("hobi").length; index++) {
+                document.getElementsByName("hobi")[index].checked = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
