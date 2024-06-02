@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .mavi {color: blue;}
+        .kirmizi{color: red;}
+    </style>
+    <script>
+        function renkDegistir() {
+            document.getElementsByClassName("mavi")[0].style.color = "black";
+        }
+
+    </script>
+</head>
+
+<body>
+    <p class="mavi">Merhaba</p>
+    <p class="kirmizi">Merhaba</p>
+    <p class="mavi">Merhaba</p>
+    <input type="button" value="Basiniz" onclick="renkDegistir()">
+</body>
+
+</html>
