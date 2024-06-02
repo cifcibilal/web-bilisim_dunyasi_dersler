@@ -1,0 +1,29 @@
+input[type=text] {
+    width: 250px;
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    margin: 8px 0;
+    outline: 0;
+    padding: 10px 0 10px 40px;
+    transition: .3s;
+}
+input[type=text]:focus{
+    border-color: deepskyblue;
+    box-shadow: 0 0 10px 0 deepskyblue;
+}
+
+.ikonekle{
+    position: relative;
+}
+.ikonekle i{
+    position: absolute;
+    left: 0;    
+    top: 0;
+    font-size: 18px;
+    padding:19px 10px ;
+    color: #aaa;
+}
+
+.ikonekle input[type=text]:focus + i{
+    color: deepskyblue;
+}
