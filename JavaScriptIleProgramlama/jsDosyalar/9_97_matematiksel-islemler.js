@@ -13,10 +13,17 @@
 // islem = a - b;
 // islem = a * b;
 // islem = a + b;
-// document.write(a)
+// documsent.write(a)
 
-var x = 5;
-var y = 6;
+// var x = 5;
+// var y = 6;
 
-document.writeln(x==y)
-document.writeln("\n" + x!=y)
+// document.writeln(x==y)
+// document.writeln("\n" + x!=y)
+
+function hesapla() {
+    var a =parseFloat(document.getElementById("sayi_1").value); 
+    var b =parseFloat(document.getElementById("sayi_2").value); 
+    var toplam = a + b;
+    alert(toplam)
+}
