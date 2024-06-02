@@ -1,0 +1,67 @@
+body {
+    background: url(../../resimler/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg);
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .7);
+    border-radius: 15px;
+}
+
+h2 {
+    margin-bottom: 30px;
+    padding: 0;
+    color: aliceblue;
+    text-align: center;
+}
+
+.wrapper .inputBox {
+    position: relative;
+}
+
+.wrapper .inputBox input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.wrapper .inputBox label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.wrapper .inputBox input:focus~label,
+.wrapper .inputBox input:valid~label {
+    top: -18px;
+    left: 0;
+    color: #03A9F4;
+    font-size: 12px;
+}
+
+input[type=submit]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #03A9F4;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
