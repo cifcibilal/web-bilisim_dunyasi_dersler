@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <h1 class="baslik">jQuery Dersleri</h1>
+    <div class="baslik">jQuery Dersleri</div>
+    <p class="baslik">jQuery Dersleri</p>
+    <p class="baslik">jQuery Dersleri</p>
+
+
+    <script>
+        // jQuery("h1").css("color","red");
+        // $(".baslik").css("font-size","50px");
+        // $("#baslik").html("Merhaba jQuery Dersleri");
+
+        // var yazi = $("#baslik").html();
+        // alert(yazi);
+
+
+        // var bilgi = document.getElementsByTagName("p");
+        // for(let i = 0; i < bilgi.length; i++){
+        //     bilgi[i].style.color = "red";
+        // }
+
+        jQuery("h1,p,div").css("color", "blue");
+        jQuery("p:last").css("color", "red");
+
+    </script>
+</body>
+
+</html>
