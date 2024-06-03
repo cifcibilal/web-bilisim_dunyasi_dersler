@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="baslik">jQuery Dersleri</h1>
+        <p>1. Lorem, ipsum.</p>
+        <p>2. Lorem, ipsum dolor.</p>
+        <p>3. Lorem ipsum dolor sit.</p>
+        <span>
+            <p>a) Lorem, ipsum.</p>
+            <p>b) Lorem, ipsum.</p>
+            <p>c) Lorem, ipsum.</p>
+        </span>
+        <p>3. Lorem, ipsum dolor.</p>
+        <p>4. Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // $("div").css("color","blue"); // Element Secici
+            // $(".container").css("color","red"); // Sinif Secici
+            // $("#baslik").css("color","orange"); // ID Secici
+            // $("#baslik, span").css("color","orange"); // Coklu Secici 
+            // $("span p").css("color","red"); // Hiyerarsik Secici
+            // $(".container > p").css("color","red"); // Parent {Ata} Secici
+            // $("h1 + p").css("color","red"); //Komsu Secici
+            // $("h1 ~ p").css("color","red"); //Komsu ebeveyn Secici
+            // $("p:first").css("color","red"); //belirlenen kriterden ilki Secici
+            // $("p:last").css("color","red"); //belirlenen kriterden sonu Secici
+            // $("p:eq(0),p:eq(2)").css("color","red"); // index numarasina gore Secici
+            // $("p:gt(3)").css("color","red"); // index numarasina gore Secici
+            // $(".container p:lt(3)").css("color","red"); // index numarasina gore Secici
+        });
+    </script>
+</body>
+
+</html>
