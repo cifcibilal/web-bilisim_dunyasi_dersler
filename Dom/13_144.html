@@ -9,19 +9,13 @@
 
 <body>
 
-    <ul id="liste-1">
-        <li>Python</li>
-        <li>C#</li>
-    </ul>
-
-    <ul id="liste-2">
-        <li>Java</li>
-        <li>JavaScript</li>
-    </ul>
+    <ul id="liste-1"><li>Python</li><li>C#</li></ul>
+    <ul id="liste-2"><li>Java</li><li>JavaScript</li></ul>
 
 
     <input type="button" name="buton" id="btn_tasi" value="Tasi" onclick="tasi()">
     <input type="button" name="buton" id="btn_sil" value="Sil" onclick="sil()">
+    <input type="button" name="buton" id="btn_degistir" value="Degistir" onclick="degistir()">
 
 
     <script>
@@ -37,6 +31,12 @@
             if (silinecek.hasChildNodes()) {
                 silinecek.removeChild(silinecek.lastChild);
             }
+        }
+
+        function degistir() {
+            yenibilgi = document.createTextNode("C++");
+            var sec = document.getElementById("liste-1").childNodes[0];
+            sec.replaceChild(yenibilgi, sec.childNodes[0]);
         }
     </script>
 </body>
