@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul id="liste-1"><li>Python</li><li>C#</li></ul>
+
+    <ul id="liste-2"><li>Java</li><li>JavaScript</li></ul>
+
+
+    <input type="button" name="buton" id="btn_tasi" value="Tasi" onclick="tasi()">
+    <input type="button" name="buton" id="btn_sil" value="Sil" onclick="sil()">
+
+
+    <script>
+
+        function tasi() {
+            var tasinacak_eleman = document.getElementById("liste-2").lastChild;
+            var nereye_tasinacak = document.getElementById("liste-1");
+            nereye_tasinacak.insertBefore(tasinacak_eleman, nereye_tasinacak.childNodes[0]);
+        }
+
+        function sil() {
+            var silinecek = document.getElementById("liste-1");
+            silinecek.removeChild(silinecek.lastChild);
+        }
+    </script>
+</body>
+
+</html>
