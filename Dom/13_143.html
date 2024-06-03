@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <ul id="dil"><li>JavaScript</li><li>Python</li><li>C#</li>
+    </ul>
+
+    <script>
+        var yeni_oge = document.createElement("li");
+        var yazi = document.createTextNode("Delphi");
+        yeni_oge.appendChild(yazi);
+
+        var nereye = document.getElementById("dil");
+        nereye.insertBefore(yeni_oge,nereye.childNodes[1]);
+    </script>
+</body>
+
+</html>
