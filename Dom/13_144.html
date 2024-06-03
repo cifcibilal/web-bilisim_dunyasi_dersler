@@ -9,9 +9,15 @@
 
 <body>
 
-    <ul id="liste-1"><li>Python</li><li>C#</li></ul>
+    <ul id="liste-1">
+        <li>Python</li>
+        <li>C#</li>
+    </ul>
 
-    <ul id="liste-2"><li>Java</li><li>JavaScript</li></ul>
+    <ul id="liste-2">
+        <li>Java</li>
+        <li>JavaScript</li>
+    </ul>
 
 
     <input type="button" name="buton" id="btn_tasi" value="Tasi" onclick="tasi()">
@@ -28,7 +34,9 @@
 
         function sil() {
             var silinecek = document.getElementById("liste-1");
-            silinecek.removeChild(silinecek.lastChild);
+            if (silinecek.hasChildNodes()) {
+                silinecek.removeChild(silinecek.lastChild);
+            }
         }
     </script>
 </body>
