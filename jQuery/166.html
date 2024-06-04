@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/jquery-3.7.1.min.js"></script>
+    <style>
+        .bilgi {
+            width: 200px;
+            height: 200px;
+            background: #FFB5B6;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="bilgi" id="icerik"><br>
+        Ad Soyad: <input type="text" name="adSoyad" id="adSoyad" value=""><br>
+        Okul No : <input type="text" name="okulNo" id="OkulNo">
+        <br>
+        <input type="button" value="Basınız" id="basiniz" name="basiniz">
+    </div>
+
+    <script>
+        $(document).ready(function() {
+           $(":button").click(function() {
+            // $("#icerik").append($("input:eq(0)").attr("type"));
+            // $("input:eq(1)").attr("value","Okul No");
+            $("input:eq(1)").attr({
+                type:"text",
+                id:"okulNo",
+                value:"Okul No"
+            });
+           });
+        });
+    </script>
+</body>
+
+</html>
