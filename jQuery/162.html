@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+<ol>
+    <li>Python</li>
+    <li>C#</li>
+    <li id="c">C++</li>
+    <li>Java</li>
+    <li>JavaScript</li>
+</ol>
+
+<button>Kalin Yap</button>
+
+<script>
+    $(document).ready(function(){
+        $("button").click(function(){
+            var liste = $("li");
+            // console.log(liste);
+            // var yeni_liste = liste.filter(":odd");
+            // yeni_liste.css("font-weight","bolder");
+            // console.log(yeni_liste);
+
+            var yeni_dizi = liste.filter(function(index){
+                return index%2==1 || $(this).attr("id")=="c";
+            });
+            yeni_dizi.css("font-weight","bolder");
+            console.log(yeni_dizi);
+        });
+    });
+</script>
+</body>
+
+</html>
