@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="bilgi" id="icerik"><br>
+    <div class="" id="icerik"><br>
         Ad Soyad: <input type="text" name="adSoyad" id="adSoyad" value=""><br>
         Okul No : <input type="text" name="okulNo" id="OkulNo">
         <br>
@@ -27,14 +27,8 @@
 
     <script>
         $(document).ready(function () {
-            $(":button").click(function () {
-                // $("#icerik").append($("input:eq(0)").attr("type"));
-                // $("input:eq(1)").attr("value","Okul No");
-                $("input:eq(1)").attr({
-                    type: "text",
-                    id: "okulNo",
-                    value: "Okul No"
-                });
+            $(":button").click(function(){
+                $("#icerik").addClass("bilgi");
             });
         });
     </script>
