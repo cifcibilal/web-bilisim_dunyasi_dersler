@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Responsive Menu</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"> 
-	<link rel="stylesheet"  href="fontawesome/css/all.min.css">
-<script src="jquery-3.4.1.min.js"></script>
+	<meta charset="utf-8">
+	<title>Responsive Menu</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="fontawesome/css/all.min.css">
+	<script src="jquery-3.4.1.min.js"></script>
 	<link rel="stylesheet" href="responsive.css">
 </head>
 
@@ -24,7 +25,7 @@
 			</li>
 			<li><a href="#">Hizmetlerimiz</a></li>
 			<li><a href="#">Hakkımızda<i class="fas fa-sort-down"></i></a>
-					<ul>
+				<ul>
 					<li><a href="#">Misyonumuz</a></li>
 					<li><a href="#">Vizyonumuz</a></li>
 
@@ -35,27 +36,28 @@
 			<li><a href="#">İletişim</a></li>
 		</ul>
 	</nav>
-	
+
 	<script>
-		$(document).ready(function(){
-			$("nav div").click(function(){
+		$(document).ready(function () {
+			$("nav div").click(function () {
 				$("ul").slideToggle();
-				$("ul ul").css("display","none");
+				$("ul ul").css("display", "none");
 			});
-			
-			$("ul li").click(function(){
+
+			$("ul li").click(function () {
 				$("ul ul").slideUp();
 				$(this).find("ul").slideToggle();
 			});
-			
-			$(window).resize(function(){
-				if($(window).width()>700){
+
+			$(window).resize(function () {
+				if ($(window).width() > 700) {
 					$("ul").removeAttr("style");
 				}
 			});
 		});
 	</script>
-	
-	
+
+
 </body>
+
 </html>
