@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <h4>Gizle / Goster</h4>
+        <p>JavaScript</p>
+    </div>
+    <div>
+        <h4>Gizle / Goster</h4>
+        <p>JQuery</p>
+    </div>
+    <div>
+        <h4>Gizle / Goster</h4>
+        <p>PHP</p>
+    </div>
+
+    <script>
+        var div = $("div");
+        div.find("p").css("display", "none");
+        $("div").click(function () {
+            $("div p").slideUp();
+            $(this).find("p").slideToggle("fast");
+        });
+    </script>
+
+</body>
+
+</html>
