@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+
+    <p></p>
+    <p class="yazi">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquid aliquam exercitationem eveniet minima
+        enim corporis maiores accusamus voluptate provident? Officia possimus enim sequi provident, voluptas
+        exercitationem laudantium necessitatibus iste.</p>
+    <input type="text" name="" id="sayi-1">
+    <input type="text" name="" id="sayi-2">
+    <input type="button" value="Basiniz">
+
+    <script>
+        $(document).ready(function () {
+            $(":button").click(function () {
+                // var sayi_1 = parseInt($("input:eq(0)").val());
+                // var sayi_2 = parseInt($("input:eq(1)").val());
+                // var toplam = sayi_1 + sayi_2;
+
+                // $("p").html(toplam);
+
+                var yazi = $(".yazi").html();
+                alert(yazi);
+
+            });
+        });
+    </script>
+</body>
+
+</html>
