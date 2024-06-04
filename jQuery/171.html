@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/jquery-3.7.1.min.js"></script>
+    <style>
+        .baslik,
+        .icerik {
+            padding: 5px;
+            text-align: center;
+            background-color: #B1E0FF;
+            border: 1px solid #83C0F8;
+        }
+
+        .icerik {
+            padding: 30px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="baslik">Menu 1</div>
+    <div class="icerik">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maxime, deleniti laborum atque
+        ratione repudiandae nobis fuga? Sed dolores laborum, eaque quas saepe assumenda illum voluptate molestiae ullam,
+        eos rem.</div>
+    <div class="baslik">Menu 2</div>
+    <div class="icerik">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maxime, deleniti laborum atque
+        ratione repudiandae nobis fuga? Sed dolores laborum, eaque quas saepe assumenda illum voluptate molestiae ullam,
+        eos rem.</div>
+    <div class="baslik">Menu 3</div>
+    <div class="icerik">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et maxime, deleniti laborum atque
+        ratione repudiandae nobis fuga? Sed dolores laborum, eaque quas saepe assumenda illum voluptate molestiae ullam,
+        eos rem.</div>
+
+    <script>
+        $(document).ready(function () {
+            $(".baslik:eq(0)").click(function () {
+                $(".icerik:eq(0)").slideToggle("slow");
+                $(".icerik:eq(1),.icerik:eq(2)").slideUp("slow");
+            });
+            $(".baslik:eq(1)").click(function () {
+                $(".icerik:eq(1)").slideToggle("slow");
+                $(".icerik:eq(0),.icerik:eq(2)").slideUp("slow");
+            });
+            $(".baslik:eq(2)").click(function () {
+                $(".icerik:eq(2)").slideToggle("slow");
+                $(".icerik:eq(1),.icerik:eq(0)").slideUp("slow");
+            });
+        });
+    </script>
+</body>
+
+</html>
